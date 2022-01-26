@@ -21,9 +21,11 @@
 
       const data = {email, password, short, url}
 
-      axios.post("/admin/urls/", data).then(response => {
-      console.log(response)
-      })
+      axios.post("/admin/urls/", data).then(response=>{
+                alert("Generated");
+            }).catch(err =>{
+                alert("Failed");
+            })
 
       //console.log(data);
 
